@@ -77,8 +77,25 @@
                 </div>
             </div>
         </nav>
+		<div>
+		 <div class="col-md-2">
+ 
+            <div class="panel panel-default">
+                <div class="panel-heading">Меню</div>
 
+                <div class="panel-body">
+				@foreach($all as $one)
+					<a href = "{{asset('/category/'. $one->id)}}" class = "btn btn-block btn-default"> {{$one->name}}</a>
+				@endforeach
+                </div>
+            </div>
+ 
+ 
+		 </div>
+		 <div class="col-md-10">
         @yield('content')
+		</div>
+		</div>
     </div>
 
     <!-- Scripts -->
