@@ -21,6 +21,7 @@
 @else
 	<img src = "{{asset('no_photo.png')}}"/>
 @endif
+<a href = "#" class = "addCart" id = "good-{{$one->id}}-{{$one->price}}"> Положить в корзину</a>
 @endforeach
 <div align = "center"> {!!$all->links()!!}</div> 
                 </div>
